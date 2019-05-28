@@ -4,7 +4,7 @@
 
 
  Hur används HTTP-protokollet när du surfar in på en websida? Beskriv vilken **metod**, **path**, **URI**, **response code** och **body** som skickas in och svarar. Om du har svårt att bestämma dig för en url, ta ex. (http://www.smp.se/kultur-noje/) ?
- >
+ 
  ```
 - metod = GET 
 - path =  /kultur-noje
@@ -13,7 +13,7 @@
 - Vi får även tillbka flera headers
 ```
  **Beskriv HTTP-protokollets vanligaste metoder och vad de gör?**
->
+
 ```
 | **GET** – skickar den utpekade filen till klienten. 
 
@@ -28,7 +28,6 @@
 
  **"http://localhost:3000/users?username=something" är en URI, beskriv vilka delar den består av och vad de kallas?**
 
->
 ```
 - URI = scheme://authority/path?query
 - authority = host:port i detta fall 
@@ -37,7 +36,7 @@
 ```
 
 **På vilka tre sätt kan man skicka in parametrar i en HTTP-request? Ge exempel med curl?**
-> 
+
 ```
 Exampel: 
 curl -X GET "localhost:3000/students?name=TheNameYouSearchFor" -H "Content-Type: application/json; charset=utf-8" | jq
@@ -70,7 +69,7 @@ localhost:3000
 
 * **CURL**
  ```
-// we use curl in our terminal to be able to send requests. 
+we use curl in our terminal to be able to send requests. 
 Exampel: curl -X GET "localhost:3000/students"  
 
 Exampel: 
@@ -103,7 +102,7 @@ https://chocolatey.org/
 
  * **JQ**
  ```
- //We use jq in our request to make it more readable. 
+ We use jq in our request to make it more readable. 
  Install jq by typing this in your terminal: brew install jq
  Now we can do requests that looks nicer
  Exampel: curl -X GET "localhost:3000/users"  | jq
@@ -126,7 +125,6 @@ Create and add the contents to ìndex.js file
 npm start
 press ctrl-c to break execution.
 
-
 Instructions
 npm install
 npm start
@@ -143,20 +141,22 @@ HTTP/1.1 200 OK
 X-Powered-By: Express
  ```
 
+  * **Nodemon**
+ ```
+ Nodemon is a utility that will monitor for any changes in your source and automatically restart your server. Perfect for development. Install it using npm. 
+Just use nodemon instead of node to run your code, and now your process will automatically restart when your code changes. 
+source: nodemon.io
+
+Mongoose is an NPM lib used to communicate with a mongodb database.
+
+npm install --save mongoose
+ ```
+
 
  * **Mongoose**
  ```
- //Mongoose is an NPM lib used to communicate with a mongodb database.
-
-This example can add a user and will respond with the user added
-
-Setting it up from scratch
-Paste that in your Terminal: 
+ Mongoose is an NPM lib used to communicate with a mongodb database.
 npm install --save mongoose
-
-????   Instructions  
-npm install
-npm start
  ```
 
  * **Methods:**
