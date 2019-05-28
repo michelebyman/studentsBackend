@@ -3,9 +3,12 @@
 * *Assignment in Api:er mot backend EVXFEH 18* 
 
 
-> **Hur används HTTP-protokollet när du surfar in på en websida?**
-När du skriver in din förfrågan i webläsaren  [Google](http://google.se/)körs en funktion som är kopplad till webbserver som innehåller data som sedan skickas tillbaka till webbläsaren om frågan som ställts går igenom kommer du få ett svar som oftast resulterar i att du ser en "hemsida" annars får du ett felmedelande som också är en hemsida- HTML. 
-
+> Hur används HTTP-protokollet när du surfar in på en websida? Beskriv vilken **metod**, **path**, **URI**, **response code** och **body** som skickas in och svarar. Om du har svårt att bestämma dig för en url, ta ex. (http://www.smp.se/kultur-noje/) ?
+- metod = GET 
+- path =  /kultur-noje
+- URI = (http://www.smp.se/kultur-noje/) 
+- body = HTML
+- Vi får även tillbka flera headers
 
 > **Beskriv HTTP-protokollets vanligaste metoder och vad de gör?**
 **GET** – Ber servern att skicka den utpekade filen (eller resultatet av en programkörning, databasförfrågan eller motsvarande) till klienten. Detta är i särklass det mest använda HTTP-kommandot.
@@ -285,5 +288,6 @@ Example response:
 ```
 
 
-> * **Feedback**                                                      **Det har varit en bra takt i kursen, matrialet och undervisningen har varit bra med tydliga exempel,  det viktiga tror jag är att när vi får så mycket exempel att följa steg för steg,  så behövs frågor eller mindre test för eleverna -(detta eftersom folk gärna inte ställer frågor). **
+> * **Feedback**                                      
+Det har varit  bra takt i kursen, matrialet och undervisningen har varit bra med tydliga exempel,  det viktiga tror jag är att när vi får så mycket exempel att följa steg för steg,  så behövs frågor eller mindre test för eleverna -(detta eftersom folk gärna inte ställer frågor).  Strukturen hade kunnat var lite annurlunda. 
 

@@ -11,10 +11,10 @@ router.use(function timelog(req, res, next) {
 
 // routes for students
 router.get('/students', student.get);
-router.get("/students/:id", student.getById);
+router.get('/students/:id', student.getById);
 router.post('/students', student.post);
 router.put('/students/:id', student.put);
-router.delete("/students/:id", student.deleteById);
+router.delete('/students/:id', student.deleteById);
 
 
 
