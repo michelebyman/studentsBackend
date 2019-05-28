@@ -1,15 +1,30 @@
 # studentsBackend
+----
 
 **API Assignment**
 ```
 Hur används HTTP-protokollet när du surfar in på en websida?
-Beskriv HTTP-protokollets vanligaste metoder och vad de gör.
-"http://localhost:3000/users" är en URI, beskriv vilka delar den består av och vad de kallas.
-På vilka tre sätt kan man skicka in parametrar i en HTTP-request? Ge exempel med curl.
+
+
+
+Beskriv HTTP-protokollets vanligaste metoder och vad de gör?
+
+
+
+"http://localhost:3000/users" är en URI, beskriv vilka delar den består av och vad de kallas?
+
+
+På vilka tre sätt kan man skicka in parametrar i en HTTP-request? Ge exempel med curl?
+
+se exempel nedan.... 
+
+query, 
+header, 
+_id
 ```
 
-Assignment in Api:er mot backend EVXFEH 18
-----
+* **Assignment in Api:er mot backend EVXFEH 18* **
+
 * **All you need to set up this on your computer should be below**
 
 * **Start by cloning or downloading the repository**
@@ -49,6 +64,7 @@ https://www.quora.com/What-is-Homebrew-for-OS-X
 Paste that in a macOS Terminal: 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
  ```
+
  * **Chocolatey for Windows**
  ```
 The package manager for Windows
@@ -70,9 +86,9 @@ https://chocolatey.org/
 
 * **Express**
  ```
- // ????  Is a HTTP-server we use 
+Is a HTTP-server we use 
 
- Setting it up from scratch
+Setting it up from scratch
 Paste that in your Terminal: 
 npm init
 npm install --save express
@@ -123,21 +139,19 @@ npm start
 
 
 *  **URL Params**
- ```
+```
    /students/{userId} 
- ```
+```
 
  *  **URL Query**
-  ```
+ ```
   /students?thisIsYourQuery
 
 Exampel: 
 curl -X GET "localhost:3000/students?name=TheNameYouSearchFor" -H "Content-Type: application/json; charset=utf-8" | jq
-   ```
-  
+```
 
-
-**GET** -students
+ **GET** -students
 ```
 Example request: 
 
@@ -273,5 +287,12 @@ Example response:
   "_id": "5cece983469fbe4dddcde879",
   "__v": 0
 }
+
+```
+
+
+* **Feedback**
+```
+Det har varit en bra takt i kursen, matrialet och undervisningen har varit bra med tydliga exempel,  det viktiga tror jag är att när vi får så mycket exempel att följa steg för steg,  så behövs frågor eller mindre test för eleverna -(detta eftersom folk gärna inte ställer frågor).  
 
 ```
