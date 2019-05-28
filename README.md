@@ -11,12 +11,19 @@
 - Vi får även tillbka flera headers
 
 > **Beskriv HTTP-protokollets vanligaste metoder och vad de gör?**
-**GET** – Ber servern att skicka den utpekade filen (eller resultatet av en programkörning, databasförfrågan eller motsvarande) till klienten. Detta är i särklass det mest använda HTTP-kommandot.
-
+**GET** – skickar den utpekade filen till klienten. 
+**POST** – skapar ett nytt objekt med den utvalda datan som skickas in om det matchar schemat, om det finns något. 
+**PUT** – ändrar hela objektet till det som skickas med, här måste du skicka med alla värden i objektet. 
+**PATCH** – uppdaterar objecktet och dess innehåll till det som skickas med, här kan du uppdatera enstaka värden.
+**DELETE** – Raderar den utpekade datan. 
 
 
 > **"http://localhost:3000/users" är en URI, beskriv vilka delar den består av och vad de kallas?**
 
+- URI = scheme://authority/path?query
+- authority = host:port i detta fall 
+- path = users
+- query = inget 
 
 > **På vilka tre sätt kan man skicka in parametrar i en HTTP-request? Ge exempel med curl?**
 
