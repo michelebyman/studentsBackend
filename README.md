@@ -1,29 +1,23 @@
 # studentsBackend
 ----
-
-**API Assignment**
-```
-Hur används HTTP-protokollet när du surfar in på en websida?
-
-
-
-Beskriv HTTP-protokollets vanligaste metoder och vad de gör?
-
-
-
-"http://localhost:3000/users" är en URI, beskriv vilka delar den består av och vad de kallas?
-
-
-På vilka tre sätt kan man skicka in parametrar i en HTTP-request? Ge exempel med curl?
-
-se exempel nedan.... 
-
-query, 
-header, 
-_id
-```
-
 * *Assignment in Api:er mot backend EVXFEH 18* 
+
+
+> Hur används HTTP-protokollet när du surfar in på en websida?
+När du skriver in din förfrågan i webläsaren  [Google](http://google.se/)körs en funktion som är kopplad till webbserver som innehåller data som sedan skickas tillbaka till webbläsaren om frågan som ställts går igenom kommer du få ett svar som oftast resulterar i att du ser en "hemsida" annars får du ett felmedelande som också är en hemsida- HTML. 
+
+
+> Beskriv HTTP-protokollets vanligaste metoder och vad de gör?
+**GET** – Ber servern att skicka den utpekade filen (eller resultatet av en programkörning, databasförfrågan eller motsvarande) till klienten. Detta är i särklass det mest använda HTTP-kommandot.
+
+
+
+> "http://localhost:3000/users" är en URI, beskriv vilka delar den består av och vad de kallas?
+
+
+> På vilka tre sätt kan man skicka in parametrar i en HTTP-request? Ge exempel med curl?
+
+
 
 * **All you need to set up this on your computer should be below**
 
