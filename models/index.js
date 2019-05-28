@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 const Student = require('./students.js');
 
-
 //comment 
 const uri = process.env.DATABASE_URL || 'mongodb://localhost:27017/stu'; 
 

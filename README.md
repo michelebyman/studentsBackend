@@ -18,14 +18,19 @@
 **DELETE** – Raderar den utpekade datan. 
 
 
-> **"http://localhost:3000/users" är en URI, beskriv vilka delar den består av och vad de kallas?**
+> **"http://localhost:3000/users?username=something" är en URI, beskriv vilka delar den består av och vad de kallas?**
 
 - URI = scheme://authority/path?query
 - authority = host:port i detta fall 
-- path = users
-- query = inget 
+- path defineras med /  = users
+- query defineras efter ? =  username=something
 
 > **På vilka tre sätt kan man skicka in parametrar i en HTTP-request? Ge exempel med curl?**
+- header = -H "Content-Type: application/json; charset=utf-8" 
+- query = ?name=TheNameYouSearchFor" 
+- path =  /students
+Exampel: 
+curl -X GET "localhost:3000/students?name=TheNameYouSearchFor" -H "Content-Type: application/json; charset=utf-8" | jq
 
 
 

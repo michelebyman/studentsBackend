@@ -1,7 +1,7 @@
 get = (req, res, next) => {
   var query;
   console.log(req.query.name);
-  
+
   if (req.query.name) {
     query = req.models.Student.findOne({
       "student.name": req.query.name
@@ -23,17 +23,17 @@ getById = (req, res, next) => {
 
 post = (req, res, next) => {
   req.models.Student.create(
-  {
-    student: {
-      address: {
-        street: req.body.student.address.street,
-        zipCode: req.body.student.address.zipCode,
-        city: req.body.student.address.city
+    {
+      student: {
+        address: {
+          street: req.body.student.address.street,
+          zipCode: req.body.student.address.zipCode,
+          city: req.body.student.address.city
+        },
+        email: req.body.student.email,
+        name: req.body.student.name
       },
-      email: req.body.student.email,
-      name: req.body.student.name
-    },
-  }
+    }
   ).then((student) => {
     console.log(student)
     return res.status(201).send(student);
@@ -45,30 +45,30 @@ put = (req, res, next) => {
   req.models.Student.updateOne({
     _id: req.params.id
   }, {
-    student: {
-      address: {
-        street: req.body.student.address.street,
-        zipCode: req.body.student.address.zipCode,
-        city: req.body.student.address.city
+      student: {
+        address: {
+          street: req.body.student.address.street,
+          zipCode: req.body.student.address.zipCode,
+          city: req.body.student.address.city
+        },
+        email: req.body.student.email,
+        name: req.body.student.name
       },
-      email: req.body.student.email,
-      name: req.body.student.name
-    },
-  }, {
-    new: true,
-    upsert: true,
-    runvalidators: true,
+    }, {
+      new: true,
+      upsert: true,
+      runvalidators: true,
 
-  }).then((status) => {
-    console.log("status: ", status);
-    if (status.upserted)
-      res.status(201);
-    else if (status.nModified)
-      res.status(200);
-    else
-      res.status(204);
-    res.send();
-  }).catch((error) => next(error));
+    }).then((status) => {
+      console.log("status: ", status);
+      if (status.upserted)
+        res.status(201);
+      else if (status.nModified)
+        res.status(200);
+      else
+        res.status(204);
+      res.send();
+    }).catch((error) => next(error));
 };
 
 
