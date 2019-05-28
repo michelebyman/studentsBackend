@@ -2,7 +2,7 @@
 ----
 * *Assignment in Api:er mot backend EVXFEH 18* 
 
-
+```
  Hur används HTTP-protokollet när du surfar in på en websida? Beskriv vilken **metod**, **path**, **URI**, **response code** och **body** som skickas in och svarar. Om du har svårt att bestämma dig för en url, ta ex. (http://www.smp.se/kultur-noje/) ?
  >
 - metod = GET 
@@ -44,7 +44,7 @@ curl -X GET "localhost:3000/students?name=TheNameYouSearchFor" -H "Content-Type:
 Exampel: 
 curl -X GET "localhost:3000/students/5cece29f0cef6b4c8e00dbf5" | jq
 - pathparameter =  /students/hereComesThePathParameterWhichIsThe_IdTHisTime
-
+```
 
 * **All you need to set up this on your computer should be below**
 
