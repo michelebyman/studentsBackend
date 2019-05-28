@@ -49,7 +49,9 @@ Exampel:
 curl -X GET "localhost:3000/students/5cece29f0cef6b4c8e00dbf5" | jq
 - pathparameter =  /students/hereComesThePathParameterWhichIsThe_IdTHisTime
 ```
-----
+
+
+
 ----
 
 * **All you need to set up this on your computer should be below**
