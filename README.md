@@ -3,15 +3,16 @@
 * *Assignment in Api:er mot backend EVXFEH 18* 
 
 
-> Hur används HTTP-protokollet när du surfar in på en websida? Beskriv vilken **metod**, **path**, **URI**, **response code** och **body** som skickas in och svarar. Om du har svårt att bestämma dig för en url, ta ex. (http://www.smp.se/kultur-noje/) ?
+ Hur används HTTP-protokollet när du surfar in på en websida? Beskriv vilken **metod**, **path**, **URI**, **response code** och **body** som skickas in och svarar. Om du har svårt att bestämma dig för en url, ta ex. (http://www.smp.se/kultur-noje/) ?
+ >
 - metod = GET 
 - path =  /kultur-noje
 - URI = (http://www.smp.se/kultur-noje/) 
 - body = HTML
 - Vi får även tillbka flera headers
 
-> **Beskriv HTTP-protokollets vanligaste metoder och vad de gör?**
-
+ **Beskriv HTTP-protokollets vanligaste metoder och vad de gör?**
+>
 **GET** – skickar den utpekade filen till klienten. 
 **POST** – skapar ett nytt objekt med den utvalda datan som skickas in om det matchar schemat, om det finns något. 
 **PUT** – ändrar hela objektet till det som skickas med, här måste du skicka med alla värden i objektet. 
@@ -19,15 +20,16 @@
 **DELETE** – Raderar den utpekade datan. 
 
 
-> **"http://localhost:3000/users?username=something" är en URI, beskriv vilka delar den består av och vad de kallas?**
+ **"http://localhost:3000/users?username=something" är en URI, beskriv vilka delar den består av och vad de kallas?**
 
+>
 - URI = scheme://authority/path?query
 - authority = host:port i detta fall 
 - path defineras med /  = users
 - query defineras efter ? =  username=something
 
-> **På vilka tre sätt kan man skicka in parametrar i en HTTP-request? Ge exempel med curl?**
-
+**På vilka tre sätt kan man skicka in parametrar i en HTTP-request? Ge exempel med curl?**
+> 
 Exampel: 
 curl -X GET "localhost:3000/students?name=TheNameYouSearchFor" -H "Content-Type: application/json; charset=utf-8" | jq
 
@@ -38,10 +40,6 @@ curl -X GET "localhost:3000/students?name=TheNameYouSearchFor" -H "Content-Type:
 Exampel: 
 curl -X GET "localhost:3000/students/5cece29f0cef6b4c8e00dbf5" | jq
 - pathparameter =  /students/hereComesThePathParameterWhichIsThe_IdTHisTime
-
-
-
-
 
 
 * **All you need to set up this on your computer should be below**
