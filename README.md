@@ -23,7 +23,7 @@ header,
 _id
 ```
 
-* **Assignment in Api:er mot backend EVXFEH 18* **
+* *Assignment in Api:er mot backend EVXFEH 18* 
 
 * **All you need to set up this on your computer should be below**
 
