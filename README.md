@@ -285,8 +285,5 @@ Example response:
 ```
 
 
-* **Feedback**
-```
-Det har varit en bra takt i kursen, matrialet och undervisningen har varit bra med tydliga exempel,  det viktiga tror jag är att när vi får så mycket exempel att följa steg för steg,  så behövs frågor eller mindre test för eleverna -(detta eftersom folk gärna inte ställer frågor).  
+> * **Feedback**                                                      **Det har varit en bra takt i kursen, matrialet och undervisningen har varit bra med tydliga exempel,  det viktiga tror jag är att när vi får så mycket exempel att följa steg för steg,  så behövs frågor eller mindre test för eleverna -(detta eftersom folk gärna inte ställer frågor). **
 
-```
