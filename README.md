@@ -13,12 +13,15 @@
 
  **Beskriv HTTP-protokollets vanligaste metoder och vad de gör?**
 >
-| **GET** – skickar den utpekade filen till klienten. |
+| **GET** – skickar den utpekade filen till klienten. 
 
-| **POST** – skapar ett nytt objekt med den utvalda datan som skickas in om det matchar schemat, om det finns något. |
-| **PUT** – ändrar hela objektet till det som skickas med, här måste du skicka med alla värden i objektet. |
-| **PATCH** – uppdaterar objecktet och dess innehåll till det som skickas med, här kan du uppdatera enstaka värden. |
-| **DELETE** – Raderar den utpekade datan. |
+| **POST** – skapar ett nytt objekt med den utvalda datan som skickas in om det matchar schemat, om det finns något. 
+
+| **PUT** – ändrar hela objektet till det som skickas med, här måste du skicka med alla värden i objektet. 
+
+| **PATCH** – uppdaterar objecktet och dess innehåll till det som skickas med, här kan du uppdatera enstaka värden. 
+
+| **DELETE** – Raderar den utpekade datan. 
 
 
  **"http://localhost:3000/users?username=something" är en URI, beskriv vilka delar den består av och vad de kallas?**
