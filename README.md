@@ -11,6 +11,7 @@
 - Vi får även tillbka flera headers
 
 > **Beskriv HTTP-protokollets vanligaste metoder och vad de gör?**
+
 **GET** – skickar den utpekade filen till klienten. 
 **POST** – skapar ett nytt objekt med den utvalda datan som skickas in om det matchar schemat, om det finns något. 
 **PUT** – ändrar hela objektet till det som skickas med, här måste du skicka med alla värden i objektet. 
@@ -26,11 +27,20 @@
 - query defineras efter ? =  username=something
 
 > **På vilka tre sätt kan man skicka in parametrar i en HTTP-request? Ge exempel med curl?**
-- header = -H "Content-Type: application/json; charset=utf-8" 
-- query = ?name=TheNameYouSearchFor" 
-- path =  /students
+
 Exampel: 
 curl -X GET "localhost:3000/students?name=TheNameYouSearchFor" -H "Content-Type: application/json; charset=utf-8" | jq
+
+- header = -H "Content-Type: application/json; charset=utf-8" 
+- query = ?name=TheNameYouSearchFor" 
+
+
+Exampel: 
+curl -X GET "localhost:3000/students/5cece29f0cef6b4c8e00dbf5" | jq
+- pathparameter =  /students/hereComesThePathParameterWhichIsThe_IdTHisTime
+
+
+
 
 
 
@@ -185,6 +195,8 @@ Example response:
   
 Example request:  - Singel student by _id
 
+
+Exampel: - Singel Student by query
 curl -X GET  "localhost:3000/students/?name=Michele+Byman"  | jq
 
 response:
