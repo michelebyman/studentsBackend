@@ -112,58 +112,7 @@ https://chocolatey.org/
  Now we can do requests that looks nicer
  Exampel: curl -X GET "localhost:3000/users"  | jq
  ```
-
-
-* **Express**
- ```
-Is a HTTP-server we use 
-
-Setting it up from scratch
-Paste that in your Terminal: 
-npm init
-npm install --save express
-
-add the "start": "node index.js",in package json under scripts for convenience
-
-Create and add the contents to ìndex.js file
-
-npm start
-press ctrl-c to break execution.
-
-Instructions
-npm install
-npm start
-
-when you do a request you will see that it is powered by Express. 
-
-try it by typing this in your terminal. 
-
-curl -i localhost:YourPortGoesHERE
-
-should get this:
-
-HTTP/1.1 200 OK
-X-Powered-By: Express
- ```
-
-  * **Nodemon**
- ```
- Nodemon is a utility that will monitor for any changes in your source and automatically restart your server. Perfect for development. Install it using npm. 
-Just use nodemon instead of node to run your code, and now your process will automatically restart when your code changes. 
-source: nodemon.io
-
-Mongoose is an NPM lib used to communicate with a mongodb database.
-
-npm install --save mongoose
- ```
-
-
- * **Mongoose**
- ```
- Mongoose is an NPM lib used to communicate with a mongodb database.
-npm install --save mongoose
- ```
-
+ 
  * **Methods:**
 
   `GET` | `POST` | `DELETE` | `PUT` | 
