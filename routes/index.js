@@ -1,5 +1,5 @@
 const express = require('express');
-const student = require('./student.js');
+const snippet = require('./snippet.js');
 const router = express.Router();
 
 
@@ -10,11 +10,11 @@ router.use(function timelog(req, res, next) {
 });
 
 // routes for students
-router.get('/students', student.get);
-router.get('/students/:id', student.getById);
-router.post('/students', student.post);
-router.put('/students/:id', student.put);
-router.delete('/students/:id', student.deleteById);
+router.get('/snippets', snippet.get);
+router.get('/snippets/:id', snippet.getById);
+router.post('/snippets', snippet.post);
+router.put('/snippets/:id', snippet.put);
+router.delete('/snippets/:id', snippet.deleteById);
 
 
 
